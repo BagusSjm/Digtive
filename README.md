@@ -1,2 +1,2 @@
-# Digtive-Aplha
-repository project website Digtive (Alpha Realease) 
+# Digtive-Alpha
+repository project website Digtive (Alpha Release) 
