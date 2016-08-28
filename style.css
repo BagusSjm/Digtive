@@ -1,0 +1,576 @@
+/*--- style dasar yang akan jarang di rubah -----*/
+*{
+	margin: 0;padding: 0;
+	font-weight: normal;
+	font-family: 'Ubuntu','Oxygen Mono',sans-serif;
+        font-size: 18px;
+}
+img{
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+.clear{
+	clear: both;
+}
+.d-txPst{
+    padding-top: 15px;
+    font-size: 19px;
+    text-align: justify;
+    text-indent: 10px;
+}
+
+.mTp1{
+        margin-top: 100px;
+}
+.mTp5{
+        margin-top: 50px;
+}
+
+.container{
+	width: 88%;
+	margin: 0 auto;
+}
+
+
+#d-sPg{
+    float: left !important;
+    width: 24%;
+    margin: inherit 2%;
+    position: relative;
+    clear: both;
+}
+
+.prvSpg{
+    width: 68%;
+    float: right !important;
+}
+/*--- style dasar yang akan jarang di rubah -----*/
+
+
+
+
+/* -----------------  design untuk landing page -------------------*/
+
+    #Frst{
+	    background : url('asset/people.jpg');
+	    background-size: cover;
+	    background-repeat: no-repeat;
+	    width: 100%; height: 650px;
+    }
+    .dIntr{
+	    background-color: rgba(44, 171, 226, 0.45);
+	    width: 100%; height: 100%;
+    }
+
+    		/*----------- nav ----------------------*/
+			.navLndng{
+				width: 100%;
+				height: 80px;
+			}
+
+			.lLst{
+				padding-right: 30%;
+				color: rgba(255, 255, 255, 0.5);
+				font-size: 25px;
+				float: right !important;
+				line-height: 80px;
+			}
+			.lLst:first-child{
+				padding-right: 30px;
+			}
+			.lLst:hover{
+				color: white;
+			}
+
+			.Scmd{
+				color:  rgba(255, 255, 255, 0.5);
+				font-size: 50px;
+				border: 2px rgba(255, 255, 255, 0.5) dashed;
+				box-sizing: border-box;
+				padding: 0 10px;
+				float: left;
+				margin: 40px 8px 0;
+			}
+			.Scmd:hover{
+				color: white;
+				border: 2px white dashed;
+			}
+
+		/*----------- nav ----------------------*/
+
+    .txtIntr{
+	    color: white;
+	    font-family: 'Oxygen Mono';
+	    font-weight:normal;
+    }
+
+	.anch{
+		width: 150px;
+		height: 50px;
+		text-align: center;
+		background-color: rgba(255, 255, 255, 0.5);
+		border-radius: 5px;
+		-webkit-border-radius: 5px;
+		-o-border-radius: 5px;
+		-moz-border-radius: 5px;
+		margin-top: 10px;
+	}
+
+	.anch a{
+		font-family: 'Oxygen Mono';
+		font-size: 25px;
+		font-weight: normal;
+		line-height: 50px;
+		color: black;
+	}
+
+	.anch:hover{
+		background-color: white;
+	}
+
+	#Scnd{
+		height: 720px;
+		width: 100%;
+		background-color: rgb(196, 196, 196 , 0.15);
+	}
+	.a2{
+		width:100%;
+		text-align:center;
+		font-size: 35px;
+		font-weight: lighter;
+	}
+
+	#Thrd{
+		width: 100%;
+		height: 420px;
+		background-color: rgb(35, 223, 133);
+	}
+	.lFtr{
+		box-sizing: border-box;
+		margin-top: 100px;
+		position: relative;
+	}
+	.a3{
+		position: absolute;
+		background-color: rgba(76, 126, 105, 0.56);
+		width: 100%;
+		bottom: 0; left: 0;
+		text-align: center;
+		box-sizing: border-box;
+		transition: height 1s;
+		-webkit-transition: height 1s;
+		height: 35px;
+		color: rgba(255, 255, 255, 0.5);
+		border-bottom-right-radius: 12px;
+		-webkit-border-bottom-right-radius: 12px;
+		border-bottom-left-radius:  12px;
+		-webkit-border-bottom-left-radius:  12px;
+	}
+	.a3 p{
+		font-size:0px;
+		-webkit-transition : font-size 1s;
+		padding-bottom: 8%;
+	}
+	.a3  a{
+		margin-top: 5%;
+		font-size: 0px;
+		border: 0px rgba(255, 255, 255, 0.5) solid;
+		box-sizing: border-box;
+		-webkit-border-radius:4px;
+		padding: 3px 5px;
+		color: white;
+		transition: font-size 1s;
+		-webkit-transition:font-size 1s;
+	}
+	.a3 a:hover{
+		color: rgba(76, 126, 105, 0.56);
+		background-color: white;
+	}
+
+	.lFtr:hover .a3{
+		color: white;
+		height: 100%;
+		border-radius: 12px;
+	}
+	.lFtr:hover .a3 p{
+		font-size: 18px;
+	}
+	.lFtr:hover .a3 a{
+		font-size: 20px;
+		border: 2px rgba(255, 255, 255, 0.5) solid;
+	}
+
+	#Frth{
+		background-color: rgb(99, 223, 216);
+		width: 100%;
+		height: 510px;
+	}
+	.a4{
+		color: white;
+		font-size: 18px;
+		font-family: 'Oxygen Mono';
+		text-indent: 7px;
+		text-align: left;
+		font-weight: lighter;
+	}
+	.a41{
+		float:left;
+		height:80%;
+		margin:10px 5%;
+		border-radius: 50%;
+		-webkit-border-radius: 50%;
+	}
+
+	#Fvth{
+		width: 100%;
+		height: 580px;
+		background-color: rgb(238, 248, 252);
+	}
+	.a31{
+		font-size: 12px;
+		padding: 5px 2px;
+		color: rgba(0, 0, 0, 0.57);
+	}
+	.a32{
+		font-size: 15px;
+		border: 1.5px black solid;
+		color: rgba(0, 0, 0, 0.57);
+		margin-right: 5px;
+		padding: 2px;
+	}
+	.a31:hover .a32{
+		color: black;
+		border: 1.5px black dashed;
+	}
+/* -----------------  design untuk landing page -------------------*/
+
+
+
+
+
+
+
+/* ---------- digtive label -----------------*/
+.d-lb{
+	padding-left: 5px;
+	box-sizing: border-box;
+	padding-bottom: 3.8px;
+	margin-bottom: 2%;
+        width: auto;
+	font-family: 'Oxygen Mono';
+}
+
+
+.lbSm{
+        font-size: 18px;
+}
+.lbMd{
+	font-size: 25px;
+}
+.lb-l{
+	border-bottom:  #2a81b9 1.5px solid;
+}
+
+
+.d-tag{
+    float: left;
+    font-size: 16px;
+    padding: 0 10px 0 0;
+    margin: 5px 15px 0 2px;
+    font-family: 'Oxygen Mono';
+    font-weight: bold;
+    box-sizing: border-box;
+}
+.d-tag:focus,.lnk:focus{
+    color: white;
+    background-color: #da009d;
+}
+.Tcs, .Tj, .Tp, .Th, .Tjs{
+    color: white;
+    font-size: inherit;
+}
+.Tp{
+    background-color: #9999ff;
+}
+.Tj{
+    background-color: #cc0000;
+}
+.Th{
+    background-color: #ff3333;
+}
+.Tjs{
+    background-color: #ffff00;
+}
+.Tcs{
+    background-color: #0066ff;
+}
+/* ---------- digtive label ----------------*/
+
+
+
+
+
+/*------------ style colom ---------------- */
+
+.d-col2,.d-col3, .d-col4, .d-col5{
+	float: left;
+	box-sizing: border-box;
+        height: auto;
+        margin-right: 2%;
+        position: relative;
+}
+
+
+.d-col2{
+	width: 48%;
+}
+.d-col3{
+	width: 30%;
+}
+.d-col4{
+	width: 23%;
+}
+.d-col5{
+	width: 18%;
+}
+/*------------ style colom ---------------- */
+
+
+
+
+/* ---------- Digtive box ------------- */
+
+.bx-show, .d-bx, .d-pnl, .sPg{
+	padding: 8px 12px;
+	max-width: 100%;
+	max-height: 100%;
+	display: block;
+        position: relative;
+        box-sizing: border-box;
+}
+.d-bx, .d-pnl{
+	height: auto;
+        position: relative;
+}
+.d-bx{
+	border: 1.5px #2a81b9 solid;
+	margin: 2% 1%;
+}
+
+.bxAlgn, .sFull{
+    width: 60%;
+    margin: 2% auto;
+}
+.bxSh{
+	box-shadow: 1px 3px 3px 2px rgba(198, 198, 198, 0.6);
+}
+.bxR{
+	border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+}
+
+/* ---------- Digtive box ------------- */
+
+
+
+
+
+/*------ navigation Digtive --------------*/
+.d-nav{
+    width: 100%;
+    background-color: white;
+    box-sizing: border-box;
+    height: 80px;
+}
+#d-hNav{
+    border-bottom: 2.5px #6dc6be solid;
+}
+#d-fNav{
+    margin-top: 20px;
+    border-top: 1.5px #999999 solid;
+}
+
+    /* ------- Logo Fix -----------*/
+
+    #d-brand , #Lbrnd{
+        width: 230px;
+        float: left;
+        height: 60px;
+        box-sizing: border-box;
+    }
+    #d-brand{
+		margin: 0 10% 0 5%;
+    }
+
+    #d-brand img, #Lbrnd img{
+        float: left;
+        display: block;
+        width: 80px; height: 58px;
+        padding-right: 15px;
+    }
+
+    #d-brand span , #Lbrnd span{
+        line-height: 60px;
+        font-size: 30px;
+        font-family: 'Oxygen Mono';
+        font-weight: lighter;
+    }
+    #d-brand span{
+  	  color: #2a81b9;
+    }
+    #Lbrnd span{
+	    color: white;
+    }
+    /* ---- logo on the top --------*/
+
+.nav-lst, fB2, .lLst{
+    float: left;
+    padding: 0 15px;
+    font-family: 'Oxygen Mono';
+    font-weight: lighter;
+}
+.nav-lst:hover{
+    cursor: pointer;
+    color: #da009d;
+}
+.nav-lst:focus{
+    color: #2a81b9;
+}
+
+.hLst{
+    color: black;
+    line-height: 80px;
+    font-size: 25px;
+}
+.fLst{
+    color: #898989;
+    line-height: 80px;
+    font-size: 18px;
+}
+.fB2{
+    line-height: 80px;
+    color: #898989;
+    font-size: 15px;
+    padding-right: 15px;
+}
+
+/*------ navigation Digtive --------------*/
+
+
+
+
+
+
+/*------ Digtive form ------------------*/
+
+.d-inp, .sFull{
+	font-family: 'Oxygen Mono';
+	display : block;
+	height : 40px;
+	padding : 5px 12px;
+	border: #6dc6be 1.5px solid;
+	color: #2a81b9;
+        box-sizing: border-box;
+}
+input:focus{
+        outline: 0;
+        border: #2a81b9 1.5px solid;
+        border-radius: 4px;
+}
+
+.d-inp{
+	float: left;
+	font-size : 14px;
+        width:auto;
+	margin: 0  2% 3% 0;
+}
+.sFull{
+    font-size: 18px;
+}
+
+
+.d-sbmt{
+	background-color: white;
+	color: #6dc6be;
+}
+.d-sbmt:hover{
+	background-color: #6dc6be;
+	color: white;
+}
+
+.d-btn{
+	background-color: white;
+	color: #6dc6be;
+	font-size: 15px;
+	max-height: 100px;
+	height: 35px;
+	width: auto;
+	cursor: pointer;
+	border: #6dc6be 1.5px solid;
+	padding: 3px;
+	box-sizing: border-box;
+	text-align: center;
+}
+.d-btn:focus{
+	background-color: #2a81b9 ;
+	color: white;
+}
+.d-btn:hover{
+	outline: 0;
+        border: #2a81b9 1.5px solid;
+        cursor: pointer;
+}
+
+.d-slct{
+	max-width: 100px;
+	height: 42px;
+}
+option{
+	color: #2a81b9;
+	cursor: pointer;
+}
+/*------ Digtive form --------------------*/
+
+
+
+
+
+/*------------- color and background color -------------*/
+.role-model{
+	/* -- background-color: rgba(246, 241, 241, 0.3); */
+        background-color: #f4f4f4;
+}
+
+.gB, .bB{
+    color: white;
+}
+.gB:focus,.bB:focus{
+    background-color: #da009d;
+}
+
+.gB{
+    background-color: #6dc6be;
+}
+.bB{
+    background-color: #2a81b9;
+}
+.wB{
+    background-color: white;
+    color: #2a81b9;
+}
+
+.d-cg{
+    color: #6dc6be;
+}
+.d-cb{
+    color: #2a81b9;
+}
+/*------------- color and background color -------------*/
