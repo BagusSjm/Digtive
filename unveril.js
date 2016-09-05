@@ -1,6 +1,6 @@
 /*-- jquery ready event --*/
 $(document).ready(function(){
-     /*--- smooth scroll to anchor ---*/
+    /*--- smooth scroll to anchor ---*/
          $('.scroll').on({
            click:function (e) {
              e.preventDefault();
@@ -13,5 +13,15 @@ $(document).ready(function(){
            }
          });
          
+        c = $('#data').offset().top;
+         console.log(c);
+        $('.admScroll').click(function(){
+           var target = $(this).attr('href');
+
+            $('#admPanel').animate({
+               scrollTop : $(target).offset().top-$('#admForm').offset().top
+            },'slow');
+
+        });
          
 });
