@@ -16,7 +16,7 @@
             .admNav{
                 width: 100%;
                 height: 100%;
-                overflow: scroll;
+                overflow: hidden;
                 background: 
                     -webkit-linear-gradient(45deg, hsl(200, 66%, 44%) 0%, transparent 70%), 
                     -webkit-linear-gradient(135deg, hsl(139, 34%, 86%) 10%, transparent 80%), 
@@ -46,9 +46,9 @@
              
              
              <div class="container">
-                 <div id="d-sPg" class="d-pnl mTp5 bxSh wB">
+                 <div id="d-sPg" class="d-pnl mTp5 bxR wB ">
                      <div class="d-bx bxR wB">
-                         <i class="fa fa-newspaper-o"></i><a href="#panel" class="lbSm d-cb admScroll"> Dashboard</a>
+                         <i class="fa fa-newspaper-o"></i><a href="#admForm" class="lbSm d-cb admScroll"> Dashboard</a>
                      </div>
                      <div class="d-bx bxR wB">
                          <i class="fa fa-link"></i> <a href="#connect" class="lbSm d-cb admScroll"> Connected</a>
@@ -59,30 +59,27 @@
                      
                  </div>
                  
-                 <div class="prvSpg d-pnl mTp5 bxSh wB bxSh bxR " id="admPanel" style="height:500px;margin-bottom: 34px;overflow: auto">
+                 <div class="prvSpg d-pnl mTp5 bxR " id="admPanel" style="height:500px;margin-bottom: 50px;overflow: auto">
                      
-                     <form action="index.php" method="post" style="width:100%;height: 415px">
+                     <form action="index.php" method="post" style="width:100%;height: 415px" class="d-pnl wB" id="admForm">
                          <label for="title" class="d-lb lbSm  d-cg"><i class="fa fa-edit"></i> judul post</label>
                          <input type="text" name="title" class="d-inp bxR" placeholder="input judul untuk setiap post kreativ.." 
                          style="width:100%">
-                         <textarea class="d-inp bxR clear" name="post" style="height: 250px;width: 100%" >
-                             
-                         </textarea>
+                         <textarea name="post" rows="8" cols="40" class="d-inp bxR" style="height:250px;width:100%"
+                          placeholder="tulis berbagai hal kreativ .."></textarea>
                          <input type="button" class="d-btn d-sbmt d-inp bxR" value="post" name="send">
                      </form>
-                     <a href="#" class="nav-lst hLst" style="display: none"><i class="fa fa-check-circle"></i>
-                     post terkirim Lihat post</a>
-                     <a href="#" class="nav-lst hLst"><i class="fa fa-frown-o"></i>post gagal dikirim</a>
+                     <!-- notif for succes/break post -->
+                     <a href="#" class="nav-lst hLst" ><i class="fa fa-check-circle"></i>
+                     post terkirim Lihat post</a> 
+                     <a href="#" class="nav-lst hLst" style="display: none"><i class="fa fa-frown-o"></i>post gagal dikirim</a>
                      
-                     
-                     <div class="d-pnl bxSh bB mTp1" style="height: 300px" id="#panel">
-                         
+                    
+                     <div class="d-pnl wB bxR gB mTp1" style="height: 300px" id="connect">
+                         <h3 class="d-lb lbMd gB">ini panel connect</h3>
                      </div>
-                     <div class="d-pnl bxSh bB mTp1" style="height: 300px" id="#connect">
-                         
-                     </div>
-                     <div class="d-pnl bxSh bB mTp1" style="height: 300px" id="#data">
-                         
+                     <div class="d-pnl bxSh wB mTp5" style="height: 300px;margin-bottom: 100px" id="data">
+                         <h3 class="d-lb lbMd bB">ini panel data</h3>
                      </div>
                      
                  </div>

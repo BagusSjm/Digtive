@@ -13,8 +13,7 @@ $(document).ready(function(){
            }
          });
          
-        c = $('#data').offset().top;
-         console.log(c);
+        
         $('.admScroll').click(function(){
            var target = $(this).attr('href');
 
@@ -23,5 +22,8 @@ $(document).ready(function(){
             },'slow');
 
         });
+        
+    /*-- adding a fixed nav --*/
+   
          
 });
