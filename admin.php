@@ -30,7 +30,7 @@
          <!-- header for admin -->
          <div class="admNav">
              <!-- bagian header -->
-         <div class="d-nav bxSh" id="d-hNav">
+         <div class="d-nav " id="d-hNav">
              <a href="https://www.bagussjm.github.io"><div id="d-brand" style="margin-top : 10px">
                  
                   <img src="asset/brand.png"  style="float: left, margin: 0 5% 0 10px" >
