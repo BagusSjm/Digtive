@@ -22,9 +22,9 @@
                           </div></a>
 
 
-                           <a href="http://localhost/digtive/blog.php" class="lLst">Daily</a>
-                           <a href="http://localhost/digtive/blog.php" class="lLst ">Stack</a>
-                           <a href="http://localhost/digtive/blog.php" class="lLst">Lab</a>
+                           <a href="http://localhost/digtive/daily.php" class="lLst">Daily</a>
+                           <a href="http://localhost/digtive/stack.php" class="lLst ">Stack</a>
+                           <a href="http://localhost/digtive/lab.php" class="lLst">Lab</a>
                            <a href="http://localhost/digtive/blog.php" class="lLst">Blog</a>
 
                        </div>
