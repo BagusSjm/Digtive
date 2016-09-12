@@ -7,7 +7,7 @@
           <link rel="stylesheet" href="unveril.css" media="screen"  charset="utf-8">
           <link href='https://fonts.googleapis.com/css?family=Oxygen+Mono' rel='stylesheet' type='text/css'>
           <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
-          <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.           min.css">
+          <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
           <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
           <script src="unveril.js"></script>
      </head>
@@ -22,18 +22,22 @@
                           </div></a>
 
 
-                           <a href="#" class="lLst">Daily</a>
-                           <a href="#" class="lLst ">Stack</a>
-                           <a href="#" class="lLst">Lab</a>
-                           <a href="#" class="lLst">Blog</a>
+                           <a href="http://localhost/digtive/blog.php" class="lLst">Daily</a>
+                           <a href="http://localhost/digtive/blog.php" class="lLst ">Stack</a>
+                           <a href="http://localhost/digtive/blog.php" class="lLst">Lab</a>
+                           <a href="http://localhost/digtive/blog.php" class="lLst">Blog</a>
 
                        </div>
 
                        <div class="d-col2 clear" style="padding-left:20px; line-spacing:normal;margin-top:60px;height:400px">
-                          <h1 class="txtIntr" style="font-size:50px;margin-bottom:0">Digtive <br> <h3 class="txtIntr" style="font-size:30px">Think & Launch</h3></h1><br>
+                           <h1 class="txtIntr" style="font-size:50px;margin-bottom:0">Digtive <br> 
+                               <span class="txtIntr" style="font-size:30px">Think & Launch</span>
+                           </h1><br>
                           <h5 class="txtIntr" style="font-size:25px; padding-top:25px">Selesaikan berbagai masalah bersama,<br>berfikir kreatif dan wujudkan dalam <br> dunia <b style="font-weight:bold;font-size:28px">Digital</b></h5>
 
-                         <a href="https://www.facebook.com/DigtiveDevOps/"  target="_blank" class="Scmd"> <i class="fa fa-facebook "></i></a>
+                         <a href="https://www.facebook.com/DigtiveDevOps/"  target="_blank" class="Scmd"> 
+                             <i class="fa fa-facebook "></i>
+                         </a>
                          <a href="#" class="Scmd"> <i class="fa fa-twitter "></i></a>
                          <a href="#" class="Scmd"> <i class="fa fa-google-plus"></i></a>
                        </div>
@@ -86,24 +90,36 @@
 
                    <div class="d-col4 lFtr bxR" style="height:200px">
                         <img src="asset/blog.png" alt="fitur by Digtive" style="width:100%;height:100%"/>
-                        <h1 class="a3" style="font-size:25px;">Digtive Blog <p>Tulis dan arsipkan segala ide kreatif di Digitve Blog </p><a href="#" >lihat</a></h1>
+                        <h1 class="a3" style="font-size:25px;">Digtive Blog 
+                            <p>Tulis dan arsipkan segala ide kreatif di Digitve Blog </p>
+                            <a href="http://localhost/digtive/blog.php" >lihat</a>
+                        </h1>
 
 
                    </div>
 
                    <div class="d-col4 lFtr bxR" style="height:200px">
                         <img src="asset/lab.png" alt="fitur by Digtive" style="width:100%;height:100%"/>
-                        <h1 class="a3" style="font-size:25px;">Digtive Lab <p>Lihat hal-hal baru yang di kembangkan oleh Creative Crew  </p><a href="#" >lihat</a></h1>
+                        <h1 class="a3" style="font-size:25px;">Digtive Lab 
+                            <p>Lihat hal-hal baru yang di kembangkan oleh Creative Crew  </p>
+                            <a href="http://localhost/digtive/lab.php" >lihat</a>
+                        </h1>
                    </div>
 
                    <div class="d-col4 lFtr bxR" style="height:200px">
                         <img src="asset/stack.png" alt="fitur by Digtive" style="width:100%;height:100%"/>
-                         <h1 class="a3" style="font-size:25px;">Digtive Stack <p>cari berbagai permasalahan dan solusi  yang dapat membantu anda</p><a href="#">lihat</a></h1>
+                         <h1 class="a3" style="font-size:25px;">Digtive Stack 
+                             <p>cari berbagai permasalahan dan solusi  yang dapat membantu anda</p>
+                             <a href="http://localhost/digtive/stack.php">lihat</a>
+                         </h1>
                    </div>
 
                    <div class="d-col4 lFtr bxR" style="height:200px">
                         <img src="asset/daily.png" alt="fitur by Digtive" style="width:100%;height:100%"/>
-                         <h1 class="a3" style="font-size:25px;">Digtive Daily <p>Lihat berbagai even yang di adakan dan yang sedang terjadi </p><a href="#">lihat</a></h1>
+                         <h1 class="a3" style="font-size:25px;">Digtive Daily 
+                             <p>Lihat berbagai even yang di adakan dan yang sedang terjadi </p>
+                             <a href="http://localhost/digtive/daily.php">lihat</a>
+                         </h1>
                    </div>
 
               </div>
@@ -174,25 +190,44 @@
                              <input type="text" name="name" placeholder="nama..." class="d-inp d-col2 bxR">
                              <input type="text" name="name" placeholder="email..." class="d-inp d-col2 bxR">
                              <textarea name="name" rows="8" cols="40" class="d-inp bxR" style="height:150px;width:100%" placeholder="kirim saran anda .."></textarea>
-                             <input type="button" name="send" value="kirim" class="d-inp bxR wB  d-sbmt">
+                             <input type="submit" name="send" value="kirim" class="d-inp bxR wB  d-sbmt">
                         </form>
 
                         <div class="d-col3" style="clear:both">
                              <h2  style="color:rgba(0, 0, 0, 0.79); font-size:22px;margin-bottom:13px">info</h2>
+                             <ul>
                              <li class="a31">info.digtive@gmail.com</li>
                              <li class="a31">+628 2174 6143 90</li>
                              <li class="a31">Jl. Soekarno Hatta </li>
+                             </ul>  
                         </div>
                         <div class="d-col3" >
                              <h2  style="color:rgba(0, 0, 0, 0.79); font-size:22px;margin-bottom:13px">media</h2>
-                             <a href="https://www.facebook.com/DigtiveDevOps/" target="_blank"><li class="a31"><i class="fa fa-facebook a32"></i>Digtive DevOps</li></a>
-                             <a href="#"><li class="a31"><i class="fa fa-wechat a32"></i>Digtive Oficcial</li></a>
-                             <a href="#"><li class="a31"><i class="fa fa-twitter a32"></i>Team Digtive</li></a>
+                             <a href="https://www.facebook.com/DigtiveDevOps/" target="_blank">
+                                 <ul>
+                                     <li class="a31"><i class="fa fa-facebook a32"></i>Digtive DevOps</li>
+                                 </ul>
+                             </a>
+                             <a href="#">
+                                 <ul>
+                                     <li class="a31"><i class="fa fa-wechat a32"></i>Digtive Oficcial</li>
+                                 </ul>
+                             </a>
+                             <a href="#">
+                                 <ul>
+                                     <li class="a31"><i class="fa fa-twitter a32"></i>Team Digtive</li>
+                                 </ul>
+                             </a>
                         </div>
+                        
                         <div class="d-col3" >
                              <h2  style="color:rgba(0, 0, 0, 0.79); font-size:22px;margin-bottom:13px">Team</h2>
-                              <a href="#"><li class="a31">Blog</li></a>
-                             <a href="#"><li class="a31">Tentang</li></a>
+                              <a href="#">
+                                  <ul><li class="a31">Blog</li></ul>
+                              </a>
+                             <a href="#">
+                                 <ul><li class="a31">Tentang</li></ul>
+                             </a>
                              <span class="a31" style="list-syle:none">&copy; 2016 Digtive Developer</span>
                         </div>
 
