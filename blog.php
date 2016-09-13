@@ -1,6 +1,10 @@
 <?php
 /* header and core file */
-require_once 'header.php';
+    require_once 'main/core.php';
+    require_once 'header.php';
+
+    $posts = viewPost();
+  
 ?>
 
 
@@ -106,86 +110,42 @@ require_once 'header.php';
             <div id="d-sPg" class="fxdNav">
                 <h1 class="d-lb lbSm gB ">Sedang populer di Blog</h1>
                 <!-- post on blog -->
-                <div class="bxR wB d-bx">
-                              <a href="#"><p  class="d-lb lbSm bB" >Digtive like xampp</p></a>
+                <div class="bxR wB d-bx" style="margin-bottom: 25px">
+                        <img src="asset/2.png" style="max-height: 150px">
+                        <a href="#"><p  class="d-lb lbSm bB" >Digtive like xampp</p></a>
                 </div>
-                <!-- post on blog -->
-                <div class="bxR wB d-bx">
-                    <a href="#"><p  class="d-lb lbSm bB" >
-                        Digtive bring to xampp or just another digtive bring icon for web analytic
-                    </p></a>
-                </div>
+                <a href="#" class="d-bx d-lb lbSm bB ">
+                    just another site word now
+                </a>
+                <a href="#" class="d-bx d-lb lbSm bB">
+                    live with no man in the mirror
+                </a>
+                <a href="#" class="d-bx d-lb lbSm bB">
+                    bring another icon width element
+                </a>
+               
                
             </div>
             
             <div class="prvSpg d-pnl ">
                 <h1 class="d-lb lbSm gB d-pnl">Semua post kreativ di Blog</h1>
                 
+                
+                <?php while ($row = mysqli_fetch_assoc($posts)): ?>
                  <!-- post on blog -->
                   <div class="d-bx wB bxSh" style="height: 200px">
-                      <a href="#"><p  class="d-lb lbMd bB  r " >Aktivitas team Digtive di socmed</p></a>
+                      <a href="#"><p  class="d-lb lbMd bB  r " ><?php echo substr($row['title'],0,65).' -->'; ?></p></a>
                         
                       <div class="d-pnl">
                           <img src="asset/daily.png" class="imgPst">
                           <p class="d-cg txtPrv " >
-                               Creative Crew, merupakan sebuatan untuk pengembang (developer) dan juga merupakan data 
-                               besar yang di kembangkan dan terus di dokumentasikan di dalam sebuah web direktori ...
+                               <?php echo substr($row['post'],0,65).' -->'; ?>
                           </p>
+                          <p class="d-lb wB gB " style="padding-top: 22px">di post :<?php echo $row['time']; ?> WIB</p>
                       </div>
 
                   </div>
-                 <!-- post on blog -->
-                  <div class="d-bx wB bxSh" style="height: 200px">
-                      <a href="#"><p  class="d-lb lbMd bB" >Digtive dalam pengembangan aplikasi</p></a>
-                        
-                      <div class="d-pnl">
-                          <img src="asset/2.png" class="imgPst">
-                          <p class="d-cg txtPrv " >
-                               Creative Crew terus mengadakan berbagai even dalam pengembangan digtive sebagai website direktori
-                               yang berfokus dalam pengembangan aplikasi creative ...
-                          </p>
-                      </div>
-
-                  </div>
-                 <!-- post on blog -->
-                  <div class="d-bx wB bxSh" style="height: 200px">
-                      <a href="#"><p  class="d-lb lbMd bB" >Pengembang dan team</p></a>
-                        
-                      <div class="d-pnl">
-                          <img src="asset/ibag.png" class="imgPst">
-                          <p class="d-cg txtPrv " >
-                               pengembangan dan memabangun sebuah team merupakan dua hal yang patut di pikir dalam
-                               project jangka panjang yang terus saya pikirkan .....
-                          </p>
-                      </div>
-
-                  </div>
-                 <!-- post on blog -->
-                  <div class="d-bx wB bxSh" style="height: 200px">
-                      <a href="#"><p  class="d-lb lbMd bB" >Aktivitas team Digtive di socmed</p></a>
-                        
-                      <div class="d-pnl">
-                          <img src="asset/eksperimen.png" class="imgPst">
-                          <p class="d-cg txtPrv " >
-                               dalam upaya pengembangan website kreativ, banyak hal dan tantangan yang harus di lalui oleh Creative
-                               Crew. Upaya tersebut merupakan hal yang wajar dalam sebuah team yang besar dan .....
-                          </p>
-                      </div>
-
-                  </div>
-                 <!-- post on blog -->
-                  <div class="d-bx wB bxSh" style="height: 200px">
-                      <a href="#"><p  class="d-lb lbMd bB" >Ukuran dan aktivitas</p></a>
-                        
-                      <div class="d-pnl">
-                          <img src="asset/peoples.jpg" class="imgPst">
-                          <p class="d-cg txtPrv " >
-                               ukuran dan aktivitas tergantung pada pixel yang tersedia dalam beberapa data yang terus kita 
-                               coba fikirkan dalam pengembangan website direktori seperti digtive yang ....
-                          </p>
-                      </div>
-
-                  </div>
+                 <?php endwhile;?>
 
             </div>
             
