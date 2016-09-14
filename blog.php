@@ -134,12 +134,12 @@
                 <?php while ($row = mysqli_fetch_assoc($posts)): ?>
                  <!-- post on blog -->
                   <div class="d-bx wB bxSh" style="height: 200px">
-                      <a href="#"><p  class="d-lb lbMd bB  r " ><?php echo substr($row['title'],0,65).' -->'; ?></p></a>
+                      <a href="#"><p  class="d-lb lbMd bB  r " ><?php echo substr($row['title'],0,65).'..'; ?></p></a>
                         
                       <div class="d-pnl">
                           <img src="asset/daily.png" class="imgPst">
                           <p class="d-cg txtPrv " >
-                               <?php echo substr($row['post'],0,65).' -->'; ?>
+                               <?php echo substr($row['post'],0,65).'... '; ?>
                           </p>
                           <p class="d-lb wB gB " style="padding-top: 22px">di post :<?php echo $row['time']; ?> WIB</p>
                       </div>

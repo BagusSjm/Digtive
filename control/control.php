@@ -1,8 +1,17 @@
 <?php
 
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
+    function viewPost(){
+        global $connect;
+        
+        $query = "SELECT * FROM `d_blog` ORDER BY `id` DESC";
+        $execute   =  mysqli_query($connect, $query);
+        return $execute;
+    }
+    
+    function addPost($title,$value){
+        global $connect;
+        
+        $query = "INSERT INTO d_blog(title,post) VALUES ('$title','$value') ";
+        $execute = mysqli_query($connect, $query);
+        return $execute;        
+    }

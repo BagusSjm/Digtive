@@ -14,7 +14,8 @@ $(document).ready(function(){
          });
          
         
-        $('.admScroll').click(function(){
+        $('.admScroll').click(function(e){
+           e.preventDefault();
            var target = $(this).attr('href');
 
             $('#admPanel').animate({

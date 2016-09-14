@@ -1,3 +1,33 @@
+<?php 
+    /**
+     * load core file
+     * load init file
+     * **/
+    require_once 'main/core.php'; 
+    
+    $status = '';
+    
+    if (isset($_POST['send'])):
+        $title = $_POST['title'];
+        $value = $_POST['post'];
+        if (!empty($title) and !empty($value)):
+            if (addPost($title,$value)):
+                header('Location: http://localhost/digtive/blog.php');
+                $status = '<i class="fa fa-check-square"></i>post terkirim'
+                        . '<a href="http://localhost/digtive/blog.php">lihat post</a>';
+            else:
+                $status = '<i class="fa fa-frown-o"></i>gagal mengirim post';
+            endif;
+        else:
+                $status = '<i class="fa fa-frown-o"></i>semua form harus terisi';
+        endif;
+        
+    endif;
+    
+
+?>
+
+
 <!DOCTYPE html>
 <html>
      <head>
@@ -61,18 +91,17 @@
                  
                  <div class="prvSpg d-pnl mTp5 bxR " id="admPanel" style="height:500px;margin-bottom: 50px;overflow: auto">
                      
-                     <form action="index.php" method="post" style="width:100%;height: 415px" class="d-pnl wB" id="admForm">
+                     <form  method="post" style="width:100%;height: 415px" class="d-pnl wB" id="admForm" novalidate="">
                          <label for="title" class="d-lb lbSm  d-cg"><i class="fa fa-edit"></i> judul post</label>
                          <input type="text" name="title" class="d-inp bxR" placeholder="input judul untuk setiap post kreativ.." 
                          style="width:100%">
                          <textarea name="post" rows="8" cols="40" class="d-inp bxR" style="height:250px;width:100%"
                           placeholder="tulis berbagai hal kreativ .."></textarea>
-                         <input type="button" class="d-btn d-sbmt d-inp bxR" value="post" name="send">
+                         <input type="submit" class="d-btn d-sbmt d-inp bxR" value="post" name="send">
                      </form>
+                     
                      <!-- notif for succes/break post -->
-                     <a href="#" class="nav-lst hLst" ><i class="fa fa-check-circle"></i>
-                     post terkirim Lihat post</a> 
-                     <a href="#" class="nav-lst hLst" style="display: none"><i class="fa fa-frown-o"></i>post gagal dikirim</a>
+                     <p class="nav-lst hLst"><?php echo $status; ?></p>
                      
                     
                      <div class="d-pnl wB bxR gB mTp1" style="height: 300px" id="connect">
