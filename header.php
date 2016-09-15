@@ -22,10 +22,10 @@
                  
              </div></a>
              
-             <a href="#" class="nav-lst hLst">Home</a>
-             <a href="#" class="nav-lst hLst">Blog</a>
-             <a href="#" class="nav-lst hLst">Lab</a>
-             <a href="#" class="nav-lst hLst">Stack</a>
-             <a href="#" class="nav-lst hLst">Daily</a>
+             <a href="http://localhost/digtive/" class="nav-lst hLst">Home</a>
+             <a href="http://localhost/digtive/blog.php" class="nav-lst hLst">Blog</a>
+             <a href="http://localhost/digtive/lab.php" class="nav-lst hLst">Lab</a>
+             <a href="http://localhost/digtive/stack.php" class="nav-lst hLst">Stack</a>
+             <a href="http://localhost/digtive/daily.php" class="nav-lst hLst">Daily</a>
                 
          </div>

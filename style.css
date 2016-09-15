@@ -30,9 +30,13 @@ a{
     margin-right: 5%;
 }
 .txtPrv{
-    font-size: 15px;
+    font-size: 17.5px;
     text-align: left;
-    text-indent: 9px;
+    white-space:  pre-line;
+    color: #3d3b3b;
+    text-indent: 30px;
+    line-height: 1.7;
+    text-align: justify;
 }
 
 .mTp1{

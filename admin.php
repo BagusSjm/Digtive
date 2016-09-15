@@ -19,7 +19,7 @@
                 $status = '<i class="fa fa-frown-o"></i>gagal mengirim post';
             endif;
         else:
-                $status = '<i class="fa fa-frown-o"></i>semua form harus terisi';
+                $status = '<i class="fa fa-hand-o-up"></i>semua form harus terisi';
         endif;
         
     endif;
