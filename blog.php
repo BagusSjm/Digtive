@@ -134,9 +134,9 @@
                 
                 <?php while ($row = mysqli_fetch_assoc($posts)): ?>
                  <!-- post on blog -->
-                  <div class="d-bx wB bxSh" style="height: 200px">
+                  <div class="d-bx wB bxSh" style="height: 250px">
                       <a href="http://localhost/digtive/single.php?post_tumb=<?php echo $row['id']; ?>">
-                          <p  class="d-lb lbMd bB"><?php echo substr($row['title'],0,65).'..'; ?></p>
+                          <p  class="d-lb lbMd bB"><?php echo substr($row['title'],0,55).'..'; ?></p>
                       </a>
                         
                       <div class="d-pnl">
@@ -144,9 +144,18 @@
                           <p class="d-cg txtPrv " >
                                <?php echo substr($row['post'],0,65).'... '; ?>
                           </p>
-                          <p class="d-lb wB gB " style="padding-top: 22px">di post :<?php echo $row['time']; ?> WIB</p>
                       </div>
-
+                      <div class="d-lb wB gB clear" style="padding-top: 20px">
+                              <span class="d-col2">di post :<?php echo $row['time']; ?> WIB</span>
+                              <a href="http://localhost/digtive/edit.php?post_edit=<?php echo $row['id'];?>" 
+                               class="d-col4 gB bxSh" style="text-align:center">
+                                  <i class="fa fa-edit"></i> edit
+                              </a>
+                              <a href="http://localhost/digtive/delete.php?post_delete=<?php echo $row['id'];?>" 
+                              class="d-col4 gB bxSh" style="text-align:center">
+                                  <i class="fa fa-refresh"></i> hapus
+                              </a>
+                          </div>
                   </div>
                  <?php endwhile;?>
 

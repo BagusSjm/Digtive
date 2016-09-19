@@ -7,22 +7,33 @@
     
     $status = '';
     
-    if (isset($_POST['send'])):
+    if (isset($_GET['post_edit'])):
+        $idEdit = $_GET['post_edit'];
+        
+        /*-- get default data --*/
+        if ($rowId = mysqli_fetch_assoc(viewPostById($idEdit))):
+            $rowTitle = $rowId['title'];
+            $rowValue = $rowId['post'];
+            $rowTime = $rowId['time'];
+        endif;
+        
+        /*-- send idited document --*/
+        if (isset($_POST['send'])):
         $title = $_POST['title'];
         $value = $_POST['post'];
         if (!empty($title) and !empty($value)):
-            if (addPost($title,$value)):
+            if (editPost($idEdit,$title,$value)):
                 header('Location: http://localhost/digtive/blog.php');
-                $status = '<i class="fa fa-check-square"></i>post terkirim'
-                        . '<a href="http://localhost/digtive/blog.php">lihat post</a>';
             else:
-                $status = '<i class="fa fa-frown-o"></i>gagal mengirim post';
+                $status = '<i class="fa fa-frown-o"></i>gagal mengedit post';
             endif;
         else:
                 $status = '<i class="fa fa-hand-o-up"></i>semua form harus terisi';
         endif;
         
     endif;
+         
+    endif
     
 
 ?>
@@ -94,10 +105,10 @@
                      <form  method="post" style="width:100%;height: 415px" class="d-pnl wB" id="admForm" novalidate="" 
                      enctype="multipart/form-data">
                          <label for="title" class="d-lb lbSm  d-cg"><i class="fa fa-edit"></i> judul post</label>
-                         <input type="text" name="title" class="d-inp bxR" placeholder="input judul untuk setiap post kreativ.." 
-                         style="width:100%">
-                         <textarea name="post" rows="8" cols="40" class="d-inp bxR" style="height:250px;width:100%"
-                          placeholder="tulis berbagai hal kreativ .."></textarea>
+                         <input type="text" name="title" class="d-inp bxR" style="width:100%" value="<?php echo $rowTitle;?>">
+                         <textarea name="post" rows="8" cols="40" class="d-inp bxR" style="height:250px;width:100%">
+                             <?php echo $rowValue;?>
+                         </textarea>
                          <input type="file" name="image" class="d-inp bxR" > 
                          <input type="submit" class="d-btn d-sbmt d-inp bxR" value="post" name="send">
                      </form>

@@ -24,3 +24,11 @@
         return $execute;
         
     }
+    
+    function editPost($idEdit,$title,$value){
+        global $connect;
+        
+        $query = "UPDATE d_blog SET title='$title',post='$value' WHERE id=$idEdit ";
+        $execute = mysqli_query($connect, $query);
+        return $execute;
+    }

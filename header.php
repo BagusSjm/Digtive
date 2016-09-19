@@ -2,7 +2,7 @@
 <html>
      <head>
          <meta charset="utf-8">
-          <title>design digtive alpha version</title>
+          <title>Digtive | think & launch</title>
           <link rel="stylesheet" href="style.css" media="screen"  charset="utf-8">
           <link rel="stylesheet" href="unveril.css" media="screen"  charset="utf-8">
           <link href='https://fonts.googleapis.com/css?family=Oxygen+Mono' rel='stylesheet' type='text/css'>
@@ -15,7 +15,7 @@
          
          <!-- bagian header -->
          <div class="d-nav bxSh" id="d-hNav">
-             <a href="https://www.bagussjm.github.io"><div id="d-brand" style="margin-top : 10px">
+             <a href="https://localhost/digtive"><div id="d-brand" style="margin-top : 10px">
                  
                   <img src="asset/brand.png"  style="float: left, margin: 0 5% 0 10px" >
                   <span>Digtive</span>

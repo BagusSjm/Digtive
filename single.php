@@ -43,7 +43,7 @@
                     
                     <div class="prvSpg mTp5">
                          <!-- post on blog -->   
-                        <a href="#"><p  class="d-lb lbMd bB bxR"  style="text-align: center"><?php echo $rowTitle; ?></p></a>
+                        <a href="#"><p  class="d-lb lbMd d-cb"  style="text-align: center"><?php echo $rowTitle; ?></p></a>
 
 
                         <img src="asset/daily.png" style="max-width: 40%;max-height: 40%;margin: 5% 0 5% 30%" onmouseover="opacity:0.2">
