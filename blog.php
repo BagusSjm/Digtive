@@ -146,7 +146,7 @@
                           </p>
                       </div>
                       <div class="d-lb wB gB clear" style="padding-top: 20px">
-                              <span class="d-col2">di post :<?php echo $row['time']; ?> WIB</span>
+                              <span class="d-col2 gB">di post :<?php echo $row['time']; ?> WIB</span>
                               <a href="http://localhost/digtive/edit.php?post_edit=<?php echo $row['id'];?>" 
                                class="d-col4 gB bxSh" style="text-align:center">
                                   <i class="fa fa-edit"></i> edit

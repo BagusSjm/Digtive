@@ -43,14 +43,15 @@
                     
                     <div class="prvSpg mTp5">
                          <!-- post on blog -->   
-                        <a href="#"><p  class="d-lb lbMd d-cb"  style="text-align: center"><?php echo $rowTitle; ?></p></a>
+                        <a href="#"><p  class="d-lb lbMd d-cb"  ><?php echo $rowTitle; ?></p></a>
+                        <p class="d-lb lbSm bB bxR">di post pada : <?php echo $rowTime ?> WIB</p>
 
 
-                        <img src="asset/daily.png" style="max-width: 40%;max-height: 40%;margin: 5% 0 5% 30%" onmouseover="opacity:0.2">
+                        <img src="asset/2.png" style="max-width: 40%;max-height: 40%;margin: 5% 0 5% 30%" >
                         <p class=" txtPrv " style="margin-bottom: 50px">
                             <?php echo $rowValue; ?>
                         </p>
-                        <p class="d-lb lbMd bB bxR">di post pada : <?php echo $rowTime ?>: WIB</p>
+                        
                     </div>
                 
                 </div>

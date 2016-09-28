@@ -32,3 +32,12 @@
         $execute = mysqli_query($connect, $query);
         return $execute;
     }
+    
+    function deletePost($idDeleted){
+        global $connect;
+        
+        $query = "DELETE FROM d_blog WHERE id=$idDeleted";
+        $execute = mysqli_query($connect, $query);
+        
+        return $execute;
+    }
