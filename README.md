@@ -1,2 +1,2 @@
-# Digtive-Alpha
-repository project website Digtive (Alpha Release) 
+# Digtive
+Digtive, Creative things by Creative Crew 
